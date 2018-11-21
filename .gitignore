@@ -2,3 +2,5 @@ bottleneck/train/*
 bottleneck/validation/*
 output/best-weights*
 dataset_prediction/crops/*
+dataset/**
+fashion_data/**
