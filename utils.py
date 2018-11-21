@@ -178,7 +178,6 @@ def display_bbox(image_path_name, bboxes, prediction_class_name=None, prediction
 
 
 def crop_bbox(image_path_name, bboxes):
-
     image_path_name_ = image_path_name[0]
     # image_path_name_ = image_path_name
     logging.debug('image_path_name_ {}'.format(image_path_name_))

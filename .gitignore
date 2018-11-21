@@ -3,4 +3,8 @@ bottleneck/validation/*
 output/best-weights*
 dataset_prediction/crops/*
 dataset/**
+<<<<<<< HEAD
 fashion_data/**
+=======
+fashion_data/**
+>>>>>>> 91cac3805d6d98a755582753c66bb4005c8d0fba

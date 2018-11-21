@@ -210,8 +210,8 @@ if __name__ == '__main__':
     init()
     images_path_name = get_images()
 
-    # resize_image(images_path_name)
-    # images_path_name = get_images()
+    resize_image(images_path_name)
+    images_path_name = get_images()
 
     bboxes = get_bbox(images_path_name)
     logging.debug('bboxes {}'.format(bboxes))

@@ -33,6 +33,7 @@ from selective_search import selective_search_bbox
 
 ### GLOBALS
 max_categories=50
+fashion_dataset_path = 'fashion_data'
 
 ## Shorts               : 14195
 # Skirt                : 10794
@@ -332,10 +333,10 @@ def generate_dataset_images(category_names):
 def display_category_data():
     for path in [dataset_train_path, dataset_val_path, dataset_test_path]:
         logging.info('path {}'.format(path))
-        path1, dirs1, files1 = os.walk(path).next()
+        path1, dirs1, files1 = os.walk(path).__next__()
         file_count1 = len(files1)
         for dirs1_name in dirs1:
-            path2, dirs2, files2 = os.walk(os.path.join(path, dirs1_name)).next()
+            path2, dirs2, files2 = os.walk(os.path.join(path, dirs1_name)).__next__()
             file_count2 = len(files2)
             logging.info('{:20s} : {}'.format(dirs1_name, file_count2))
 
