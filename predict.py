@@ -27,8 +27,10 @@ def init():
 
     global class_names
     # TODO: Remove hardcoding if dataset available
-    class_names = ['Anorak', 'Bomber', 'Button-Down', 'Capris', 'Chinos', 'Coat', 'Flannel', 'Hoodie', 'Jeans', 'Jeggings', 'Jersey', 'Kaftan', 'Parka', 'Peacoat', 'Poncho', 'Robe', 'Sweatshorts', 'Trunks', 'Turtleneck']
+    #class_names = ['Anorak', 'Bomber', 'Button-Down', 'Capris', 'Chinos', 'Coat', 'Flannel', 'Hoodie', 'Jeans', 'Jeggings', 'Jersey', 'Kaftan', 'Parka', 'Peacoat', 'Poncho', 'Robe', 'Sweatshorts', 'Trunks', 'Turtleneck']
     #class_names = get_subdir_list(dataset_train_path)
+    # class_names = ['Coat','Kaftan','Robe']
+    class_names = ['Flannel', 'Cardigan', 'Henley', 'Coverup', 'Hoodie', 'Onesie', 'Jeans', 'Cape', 'Coat', 'Gauchos', 'Kaftan', 'Tank', 'Button-Down', 'Cutoffs', 'Romper', 'Joggers', 'Culottes', 'Jodhpurs', 'Capris', 'Shorts', 'Jumpsuit', 'Bomber', 'Parka', 'Anorak', 'Sweatshorts', 'Trunks', 'Sweater', 'Halter', 'Dress', 'Sundress', 'Turtleneck', 'Poncho', 'Leggings', 'Caftan', 'Jersey', 'Blouse', 'Sweatpants', 'Robe', 'Jeggings', 'Top', 'Jacket', 'Nightdress', 'Kimono', 'Shirtdress', 'Blazer', 'Peacoat', 'Skirt', 'Sarong', 'Chinos', 'Tee']
     logging.debug('class_names {}'.format(class_names))
 
 
@@ -50,7 +52,7 @@ def get_bbox(images_path_name):
 
 def predict_model(images, images_names=None):
 
-    #model = create_model_predict((input_shape), optimizer, learn_rate, decay, momentum, activation, dropout_rate)
+    # model = create_model_predict((input_shape), optimizer, learn_rate, decay, momentum, activation, dropout_rate)
     model = create_model(False, True, input_shape, len(class_names), optimizer, learn_rate, decay, momentum, activation, dropout_rate)
 
 
@@ -161,7 +163,7 @@ def predict_model(images, images_names=None):
     logging.debug('images_list {}'.format(len(images_list)))
     images_list_arr = np.array(images_list)
     logging.debug('images_list_arr type {}'.format(type(images_list_arr)))
-
+    print(images_list_arr)
     prediction = model.predict(images_list_arr, batch_size, verbose=1)
     #prediction = model.predict(predict_data, batch_size, verbose=1)
     # logging.debug('\n\nprediction \n{}'.format(prediction))
@@ -210,8 +212,8 @@ if __name__ == '__main__':
     init()
     images_path_name = get_images()
 
-    resize_image(images_path_name)
-    images_path_name = get_images()
+    #resize_image(images_path_name)
+    #images_path_name = get_images()
 
     bboxes = get_bbox(images_path_name)
     logging.debug('bboxes {}'.format(bboxes))

@@ -47,14 +47,19 @@ fashion_dataset_path = 'fashion_data'
 # Sweatshorts          : 781
 # Capris               : 57
 
-#category_name_generate = ['Anorak', 'Blazer', 'Blouse', 'Bomber', 'Button-Down', 'Cardigan', 'Flannel', 'Halter', 'Henley', 'Hoodie', 'Jacket', 'Jersey', 'Parka', 'Peacoat', 'Poncho', 'Sweater', 'Tank', 'Tee', 'Top', 'Turtleneck', 'Capris', 'Chinos', 'Culottes', 'Cutoffs', 'Gauchos', 'Jeans', 'Jeggings', 'Jodhpurs', 'Joggers', 'Leggings', 'Sarong', 'Shorts', 'Skirt', 'Sweatpants', 'Sweatshorts', 'Trunks', 'Caftan', 'Cape', 'Coat', 'Coverup', 'Dress', 'Jumpsuit', 'Kaftan', 'Kimono', 'Nightdress', 'Onesie', 'Robe', 'Romper', 'Shirtdress', 'Sundress']
-#category_name_generate=['Kaftan', 'Peacoat', 'Robe', 'Turtleneck']
-#category_name_generate=['Kaftan', 'Peacoat', 'Robe']
-#category_name_generate=['Skirt','Top','Jeans','Joggers','Hoodie','Sweatpants','Coat','Sweatshorts','Capris']
-
-#category_name_generate=['Jeggings', 'Kaftan', 'Anorak', 'Flannel', 'Robe', 'Chinos', 'Parka', 'Jersey', 'Poncho', 'Trunks', 'Peacoat', 'Turtleneck', 'Button-Down', 'Capris', 'Bomber', 'Coat', 'Sweatshorts', 'Jeans', 'Hoodie']
-#category_name_generate=['Chinos', 'Coat', 'Kaftan', 'Robe']
-category_name_generate=['Coat', 'Kaftan', 'Robe']
+# category_name_generate = ['Anorak', 'Blazer', 'Blouse', 'Bomber', 'Button-Down', 'Cardigan', 'Flannel', 
+# 'Halter', 'Henley', 'Hoodie', 'Jacket', 'Jersey', 'Parka', 'Peacoat', 'Poncho', 
+# 'Sweater', 'Tank', 'Tee', 'Top', 'Turtleneck', 'Capris', 'Chinos', 'Culottes', 
+# 'Cutoffs', 'Gauchos', 'Jeans', 'Jeggings', 'Jodhpurs', 'Joggers', 'Leggings', 
+# 'Sarong', 'Shorts', 'Skirt', 'Sweatpants', 'Sweatshorts', 'Trunks', 'Caftan', 
+# 'Cape', 'Coat', 'Coverup', 'Dress', 'Jumpsuit', 'Kaftan', 'Kimono', 'Nightdress', 
+# 'Onesie', 'Robe', 'Romper', 'Shirtdress', 'Sundress','Kaftan', 'Peacoat', 'Robe', 
+# 'Turtleneck','Kaftan', 'Peacoat', 'Robe','Skirt','Top','Jeans','Joggers','Hoodie',
+# 'Sweatpants','Coat','Sweatshorts','Capris','Jeggings', 'Kaftan', 'Anorak', 
+# 'Flannel', 'Robe', 'Chinos', 'Parka', 'Jersey', 'Poncho', 'Trunks', 'Peacoat', 
+# 'Turtleneck', 'Button-Down', 'Capris', 'Bomber', 'Coat', 'Sweatshorts', 'Jeans', 
+# 'Hoodie','Chinos', 'Coat', 'Kaftan', 'Robe','Coat', 'Kaftan', 'Robe']
+category_name_generate = ['Flannel', 'Cardigan', 'Henley', 'Coverup', 'Hoodie', 'Onesie', 'Jeans', 'Cape', 'Coat', 'Gauchos', 'Kaftan', 'Tank', 'Button-Down', 'Cutoffs', 'Romper', 'Joggers', 'Culottes', 'Jodhpurs', 'Capris', 'Shorts', 'Jumpsuit', 'Bomber', 'Parka', 'Anorak', 'Sweatshorts', 'Trunks', 'Sweater', 'Halter', 'Dress', 'Sundress', 'Turtleneck', 'Poncho', 'Leggings', 'Caftan', 'Jersey', 'Blouse', 'Sweatpants', 'Robe', 'Jeggings', 'Top', 'Jacket', 'Nightdress', 'Kimono', 'Shirtdress', 'Blazer', 'Peacoat', 'Skirt', 'Sarong', 'Chinos', 'Tee']
 
 
 ### FUNCTIONS
